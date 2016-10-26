@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
 
-  get '/secret' => 'secrets#show'
+get '/secret' => 'secrets#show'
 
  root 'application#hello' #root, same as "/"
  #login needs a new and create, and logout means destroy
  get '/login' => 'sessions#new'
  post '/login' => 'sessions#create'
  post '/logout' => 'sessions#destroy'
- 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
